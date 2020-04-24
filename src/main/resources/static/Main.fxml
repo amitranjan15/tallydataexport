@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-border-radius: 5; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tallydataexport.JavafxMain">
+
+    <children>
+        <GridPane alignment="CENTER" layoutX="169.0" layoutY="147.0" prefHeight="240.0" prefWidth="426.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="255.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <PasswordField prefHeight="53.0" prefWidth="266.0" promptText="Password" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font></PasswordField>
+                <TextField prefHeight="48.0" prefWidth="255.0" promptText="Email or Mobile no">
+                    <font>
+                        <Font size="18.0" />
+                    </font></TextField>
+                <Button fx:id="login" defaultButton="true" mnemonicParsing="false" onAction="#goToTallyPage" prefHeight="57.0" prefWidth="164.0" text="Login" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Button>
+            </children>
+        </GridPane>
+    </children>
+
+</AnchorPane>
